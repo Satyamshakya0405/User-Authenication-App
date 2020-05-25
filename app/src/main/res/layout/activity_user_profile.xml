@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#C9F3FF"
+    tools:context=".UserProfile">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#C9F3FF"
+        >
+
+        <ImageView
+            android:id="@+id/userimage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/username"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.31"
+            app:srcCompat="@drawable/ic_person_black_24dp" />
+
+        <TextView
+            android:id="@+id/fullname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:fontFamily="@font/bungee"
+            android:text="FULL NAME"
+            android:textAlignment="viewStart"
+            android:textColor="#0CD392"
+            android:textSize="40sp"
+            app:layout_constraintBottom_toTopOf="@+id/username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/userimage"
+            app:layout_constraintTop_toTopOf="@+id/userimage" />
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:text="User Name"
+            android:textAlignment="viewStart"
+            android:textColor="#0CD392"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@+id/userimage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/userimage"
+            app:layout_constraintTop_toBottomOf="@+id/fullname" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/userimage"
+            app:layout_constraintEnd_toStartOf="@+id/userimage"
+            app:layout_constraintHorizontal_bias="0.208"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.125"
+            app:srcCompat="@drawable/ic_arrow_back_black_24dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+            android:layout_marginTop="-50dp"
+        android:padding="20dp"
+
+
+        >
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <TextView
+                    android:id="@+id/balance"
+                    android:layout_width="0dp"
+                    android:layout_height="47dp"
+
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/antic"
+                    android:text="Balance"
+                    android:textAlignment="center"
+                    android:textColor="#0CD392"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rupee" />
+
+                <TextView
+                    android:id="@+id/rupee"
+                    android:layout_width="0dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/antic"
+                    android:text="$565"
+                    android:textAlignment="center"
+                    android:textColor="#0CD392"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toTopOf="@+id/balance"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_marginStart="10dp"
+            android:layout_weight="1"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+                <TextView
+                    android:id="@+id/booking_label"
+                    android:layout_width="0dp"
+                    android:layout_height="47dp"
+
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/antic"
+                    android:text="Booking"
+                    android:textAlignment="center"
+                    android:textColor="#0CD392"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/booking_desc" />
+
+                <TextView
+                    android:id="@+id/booking_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/antic"
+                    android:text="12"
+                    android:textAlignment="center"
+                    android:textColor="#0CD392"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toTopOf="@+id/booking_label"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/below_name"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="FULL NAME"
+
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="10dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/below_email"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="EMAIL"
+
+                android:drawableLeft="@drawable/user_icon"
+                android:drawablePadding="10dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/below_phone"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="PHONE NUMBER"
+
+                android:drawableLeft="@drawable/round_email_black_18dp"
+                android:drawablePadding="10dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/below_password"
+            android:layout_marginBottom="20dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="PASSWORD"
+
+                android:drawableLeft="@drawable/round_vpn_key_black_18dp"
+                android:drawablePadding="10dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UPDATE"
+            android:id="@+id/update"
+            android:textColor="#0CD392"
+            android:background="@drawable/custom_button"
+            android:fontFamily="@font/antic"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "459005439115",
+    "firebase_url": "https://splashscreenapp-468c6.firebaseio.com",
+    "project_id": "splashscreenapp-468c6",
+    "storage_bucket": "splashscreenapp-468c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459005439115:android:23547583b23d4f3243b88e",
+        "android_client_info": {
+          "package_name": "com.example.splashscreenapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459005439115-fqe0q6hi3a128hk3ih0bsohvi8honv59.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.splashscreenapp",
+            "certificate_hash": "b2b90727ae647cd77e038230bf6667e054bb86cc"
+          }
+        },
+        {
+          "client_id": "459005439115-qopj3n8g8n7o1afhrp3lfla5t9ck3b2u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB0a1M0orTdxMVGRFyE4UGALRjHgVka-BA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459005439115-qopj3n8g8n7o1afhrp3lfla5t9ck3b2u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
