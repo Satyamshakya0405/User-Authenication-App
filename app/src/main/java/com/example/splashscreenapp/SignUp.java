@@ -64,9 +64,18 @@ public class SignUp extends AppCompatActivity {
                 String Password=password.getEditText().getText().toString();
                 String Phone=phone.getEditText().getText().toString();
                 String Email=email.getEditText().getText().toString();
-                UserHelperClass helperClass=new UserHelperClass(Name,Username,Email,Phone,Password);
-                FirebaseDatabase.getInstance().getReference().child("user").child(Username).setValue(helperClass);
-                Toast.makeText(SignUp.this,"data added",Toast.LENGTH_SHORT).show();
+
+                Intent intent=new Intent(SignUp.this,Verify_PhoneNo.class);
+                intent.putExtra("phoneNo",Phone);
+                intent.putExtra("name",Name);
+                intent.putExtra("username",Username);
+                intent.putExtra("password",Password);
+                intent.putExtra("email",Email);
+
+//                UserHelperClass helperClass=new UserHelperClass(Name,Username,Email,Phone,Password);
+//                FirebaseDatabase.getInstance().getReference().child("user").child(Username).setValue(helperClass);
+//                Toast.makeText(SignUp.this,"data added",Toast.LENGTH_SHORT).show();
+                startActivity(intent);
             }
         });
     }
@@ -173,18 +182,5 @@ public class SignUp extends AppCompatActivity {
             return true;
         }
     }
-//    public void registeruser(View view) {
-//
-////        if(!validateName()||!validateUserName()||!validateEmail()||!validatePhone()||!validatePassword())
-////        {
-////            return ;
-////        }
-//        String Name = name.getEditText().getText().toString();
-//        String UserName = username.getEditText().getText().toString();
-//        String Password = password.getEditText().getText().toString();
-//        String Phone = phone.getEditText().getText().toString();
-//        String Email = email.getEditText().getText().toString();
-//        UserHelperClass helperClass=new UserHelperClass(Name,UserName,Email,Phone,Password);
-//        FirebaseDatabase.getInstance().getReference().child("user").child(Phone).setValue(helperClass);
-//    }
+
 }
